@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kintone-auth-token-generator/static/css/main.b100e6da.chunk.css",
-    "main.js": "/kintone-auth-token-generator/static/js/main.96da91f9.chunk.js",
-    "main.js.map": "/kintone-auth-token-generator/static/js/main.96da91f9.chunk.js.map",
-    "runtime-main.js": "/kintone-auth-token-generator/static/js/runtime-main.cfeeea23.js",
-    "runtime-main.js.map": "/kintone-auth-token-generator/static/js/runtime-main.cfeeea23.js.map",
-    "static/js/2.72f33387.chunk.js": "/kintone-auth-token-generator/static/js/2.72f33387.chunk.js",
-    "static/js/2.72f33387.chunk.js.map": "/kintone-auth-token-generator/static/js/2.72f33387.chunk.js.map",
-    "index.html": "/kintone-auth-token-generator/index.html",
-    "precache-manifest.9144348cdb1461f97d08622c032f6a07.js": "/kintone-auth-token-generator/precache-manifest.9144348cdb1461f97d08622c032f6a07.js",
-    "service-worker.js": "/kintone-auth-token-generator/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/kintone-auth-token-generator/static/css/main.b100e6da.chunk.css.map",
-    "static/media/logo.svg": "/kintone-auth-token-generator/static/media/logo.25bf045c.svg"
+    "main.css": "./static/css/main.b100e6da.chunk.css",
+    "main.js": "./static/js/main.f925c452.chunk.js",
+    "main.js.map": "./static/js/main.f925c452.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.f34e9fe6.js",
+    "runtime-main.js.map": "./static/js/runtime-main.f34e9fe6.js.map",
+    "static/js/2.72f33387.chunk.js": "./static/js/2.72f33387.chunk.js",
+    "static/js/2.72f33387.chunk.js.map": "./static/js/2.72f33387.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.92fee7bdec16840031d5e197583e30d2.js": "./precache-manifest.92fee7bdec16840031d5e197583e30d2.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "./static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "./static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cfeeea23.js",
+    "static/js/runtime-main.f34e9fe6.js",
     "static/js/2.72f33387.chunk.js",
     "static/css/main.b100e6da.chunk.css",
-    "static/js/main.96da91f9.chunk.js"
+    "static/js/main.f925c452.chunk.js"
   ]
 }
