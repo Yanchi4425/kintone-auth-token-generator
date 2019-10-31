@@ -36,9 +36,9 @@ export default class App extends React.Component{
     });
   }
   generateToken() {
-    const token = this.state.type === "auth" ? `${this.state.id}:${this.state.pass}` : `BASIC ${this.state.id}:${this.state.pass}`;
+    const token = btoa(`${this.state.id}:${this.state.pass}`);
     this.setState({
-      token: btoa(token)
+      token: this.state.type === "auth" ? token : `Basic ${token}`
     });
   }
   copyText(){

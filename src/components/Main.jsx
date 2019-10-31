@@ -2,10 +2,11 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Auth from './Auth';
 
+
 export default function Main(props) {
     return (
         <article>
-            <Router>
+            <Router basename="/kintone-auth-token-generator/">
                 <nav>
                     <ul>
                         <li>
