@@ -11,12 +11,7 @@ export default class App extends React.Component{
   // #region .ctor
   constructor(){
     super();
-    this.state = {
-      type: "",
-      id: "",
-      pass: "",
-      token: "",
-    }
+    this.state = {type: "", id: "", pass: "", token: "",}
     this.changeType = this.changeType.bind(this);
     this.changeId = this.changeId.bind(this);
     this.changePassword = this.changePassword.bind(this);
