@@ -38,7 +38,7 @@ export default class App extends React.Component{
   generateToken() {
     const token = btoa(`${this.state.id}:${this.state.pass}`);
     this.setState({
-      token: this.state.type === "auth" ? token : `Basic ${token}`
+      token: this.state.type === "auth" ? token : `Basic ${token}`,
     });
   }
   copyText(){
