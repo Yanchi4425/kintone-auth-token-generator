@@ -2,7 +2,7 @@
   "name": "kintone-auth-token-generator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "{https://yanchi4425.github.io/kintone-auth-token-generator/}",
   "dependencies": {
     "@babel/core": "7.6.0",
     "@material-ui/core": "^4.5.0",
