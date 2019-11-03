@@ -1,39 +1,41 @@
 import React from 'react';
+import { AuthContainer } from './AuthContainer'
 
-export default class Auth extends React.Component{
-    constructor(){
-        super();
-        this.createToken = this.createToken.bind(this);
-    }
-    createToken(){
-        console.log(this.props.type)
-        this.props.changeType(this.props.type);
-        this.props.generateToken();
-    }
-    render(){
-        return (
-            <>
-                <h2>{this.props.type === "auth" ? "アプリAPI認証トークン" : "Basic認証用トークン作成"}</h2>
-                <input 
-                    type="text" 
-                    placeholder="ログイン名"
-                    value={this.props.state.id}
-                    onChange={this.props.changeId}
-                />
-                <input
-                    type="password"
-                    placeholder="パスワード"
-                    value={this.props.state.pass}
-                    onChange={this.props.changePassword}
-                />
-                <button onClick={this.createToken}>トークン生成</button>
-                <input 
-                    type="text"
-                    value={this.props.state.token}
-                    onChange={this.props.generateToken}
-                />
-                <button onClick={this.props.copyText}>コピー</button>
-            </>
-        );
-    }
+const Form = _ => {
+    const authContainer = AuthContainer.useContainer();
+
+    return (
+        <>
+            <nav>
+                <label><input type="radio" name="type" value="auth" onChange={authContainer.handleChangeType} checked={authContainer.type === "auth"} />認証トークン</label>
+                <label><input type="radio" name="type" value="basic" onChange={authContainer.handleChangeType} checked={authContainer.type !== "auth"} />Basic 認証トークン</label>
+            </nav>
+            <input
+                type="text"
+                placeholder="ログイン名"
+                value={authContainer.id}
+                onChange={authContainer.handleChangeId}
+            />
+            <input
+                type="password"
+                placeholder="パスワード"
+                value={authContainer.pass}
+                onChange={authContainer.handleChangePass}
+            />
+            <button onClick={authContainer.generateToken}>トークン生成</button>
+            <input
+                type="text"
+                readOnly
+                value={authContainer.token}
+            />
+            <button onClick={authContainer.copyText}>コピー</button>
+        </>
+    );
+}
+export const Auth = _ => {
+    return (
+        <AuthContainer.Provider>
+            <Form />
+        </AuthContainer.Provider>
+    );
 }
