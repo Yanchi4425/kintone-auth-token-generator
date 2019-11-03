@@ -6,7 +6,7 @@ import Auth from './Auth';
 export default function Main(props) {
     return (
         <article>
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router basename="/">
                 <nav>
                     <ul>
                         <li>
