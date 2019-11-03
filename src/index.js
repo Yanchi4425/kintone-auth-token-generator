@@ -1,10 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+// #region import components
+import Header from './components/Header';
+import { Auth } from './components/Auth';
+import Footer from './components/Footer';
+// #endregion import components
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <App />
+    <div className="App">
+        <Header />
+        <Auth />
+        <Footer />
+    </div>
     ,document.getElementById('root')
 );
 
