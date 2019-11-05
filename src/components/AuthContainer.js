@@ -12,7 +12,7 @@ const useAuthContainer = _ => {
      * @param {Object} e React Event
      */
     const handleChangeType = e => {
-        console.log("handleChangeType:", e.target.value)
+        document.title = `${(e.target.value === "auth" ? "通常の認証" : "Basic認証")}用のトークンを作成します。`;
         setType(e.target.value);
     }
 
@@ -30,12 +30,11 @@ const useAuthContainer = _ => {
     }
 
     const copyText = _ => {
-        console.log("textCopy");
         if (navigator.clipboard) {
             navigator.clipboard.writeText(token);
-            alert("コピーしました。")
+            return true;
         }else{
-            alert("コピーできません。\n手動でコピーしてください。")
+            return false;
         }
     }
 
